@@ -3,7 +3,7 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: ramakrishna737/app1:dp
+   image: ramakrishna737/app1:webdb
    ports:
      - "3306:3306"
 
