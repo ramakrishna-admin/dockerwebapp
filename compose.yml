@@ -6,11 +6,15 @@ services:
    image: ramakrishna737/app1:webdb
    ports:
      - "3306:3306"
+   deploy:
+     replicas: 3
 
  application:
    container_name: appcontainer
    image: ramakrishna737/app1:webapp
    ports:
      - "1234:8080"
+   deploy:
+     replicas: 3
    depends_on:
      - "devopsdb"
